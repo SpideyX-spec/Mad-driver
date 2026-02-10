@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/", "destination": "/drive-mad-game/index.html" }]
+}
