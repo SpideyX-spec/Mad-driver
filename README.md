@@ -115,10 +115,11 @@ Playing: When the car crashes, the game code says "Play sound crash.mp3". It doe
 ## 📂 Project Structure
 
 ```
-📦 Pixel-Bridge-Runner
- ┣ 📜 index.html   → Complete game code (HTML + CSS + JS)
- ┣ 📜 README.md
- ┗ 📜 assets/      → images/sprites (optional)
+drive-mad-game/
+├── index.html        <-- The entry point (Main page)
+├── index.wasm.js     <-- The Game Engine (Logic & Physics)
+├── index.data.js     <-- The Game Assets (Levels, Images, Sounds)
+└── README.md         <-- Description of your project for GitHub
 ```
 
 > All game logic is inside `index.html` for simplicity.
@@ -127,6 +128,25 @@ Playing: When the car crashes, the game code says "Play sound crash.mp3". It doe
 
 ## ▶️ How to Play
 
+# 🚗 Drive Mad (WebAssembly Version)
+
+This is a web-based version of the game **Drive Mad**, running entirely in the browser using WebAssembly.
+
+## 🎮 How to Play
+1. Click the link to open the game.
+2. Use **Arrow Keys** or **WASD** to drive.
+3. Balance your car and reach the finish line!
+
+## 🛠️ Technology Used
+* **WebAssembly (WASM)**: For high-performance physics logic (`index.wasm.js`).
+* **Virtual File System**: Game assets packed into a single JS file (`index.data.js`).
+
+## 🚀 Deployment
+This game is static and can be hosted on:
+* GitHub Pages
+* Vercel
+* Netlify
+
 ### Run locally
 
 ```bash
@@ -134,11 +154,6 @@ git clone https://github.com/your-username/pixel-bridge-runner.git
 cd pixel-bridge-runner
 open index.html
 ```
-
-or just **double-click index.html**
-
----
-
 ## 🎮 Controls
 
 | Key | Action        |
